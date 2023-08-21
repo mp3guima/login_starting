@@ -78,7 +78,7 @@ def login():
             if user:
                 if check_password_hash(user.password, password):
                     login_user(user)
-                    flash('Logged in successfully.')
+                    flash('Logged in successfully.!')
                     return redirect(url_for('secrets'))
             else:
                 flash('User not registered.')
